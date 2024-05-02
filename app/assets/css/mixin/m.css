@@ -1,0 +1,98 @@
+/* marginS */
+.m-4{
+  margin: 0.25rem; /* 4px */
+}
+
+.m-8{
+  margin: 0.5rem; /* 8px */
+}
+
+.m-12{
+  margin: 0.75rem; /* 12px */
+}
+
+.m-16{
+  margin: 1rem; /* 16px */
+}
+
+.m-20{
+  margin: 1.25rem; /* 20px */
+}
+
+.m-24 {
+  margin: 1.5rem; /* 24px */
+}
+
+.m-28{
+  margin: 1.75rem;/* 28px */
+}
+
+.m-32{
+  margin: 2rem; /* 32px */
+}
+
+/* marginS BY X */
+.mx-4{
+  margin: 0 0.25rem; /* 4px */
+}
+
+.mx-8{
+  margin: 0 0.5rem; /* 8px */
+}
+
+.mx-12{
+  margin: 0 0.75rem; /* 12px */
+}
+
+.mx-16{
+  margin: 0 1rem; /* 16px */
+}
+
+.mx-20{
+  margin: 0 1.25rem; /* 20px */
+}
+
+.mx-24 {
+  margin: 0 1.5rem; /* 24px */
+}
+
+.mx-28{
+  margin: 0 1.75rem;/* 28px */
+}
+
+.mx-32{
+  margin: 0 2rem; /* 32px */
+}
+
+/* marginS BY Y */
+.my-4{
+  margin: 0.25rem 0; /* 4px */
+}
+
+.my-8{
+  margin: 0.5rem 0; /* 8px */
+}
+
+.my-12{
+  margin: 0.75rem 0; /* 12px */
+}
+
+.my-16{
+  margin: 1rem 0; /* 16px */
+}
+
+.my-20{
+  margin: 1.25rem 0; /* 20px */
+}
+
+.my-24 {
+  margin: 1.5rem 0; /* 24px */
+}
+
+.my-28{
+  margin: 1.75rem 0;/* 28px */
+}
+
+.my-32{
+  margin: 2rem 0; /* 32px */
+}

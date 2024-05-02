@@ -1,0 +1,98 @@
+/* PADDINGS */
+.p-4{
+  padding: 0.25rem; /* 4px */
+}
+
+.p-8{
+  padding: 0.5rem; /* 8px */
+}
+
+.p-12{
+  padding: 0.75rem; /* 12px */
+}
+
+.p-16{
+  padding: 1rem; /* 16px */
+}
+
+.p-20{
+  padding: 1.25rem; /* 20px */
+}
+
+.p-24 {
+  padding: 1.5rem; /* 24px */
+}
+
+.p-28{
+  padding: 1.75rem;/* 28px */
+}
+
+.p-32{
+  padding: 2rem; /* 32px */
+}
+
+/* PADDINGS BY X */
+.px-4{
+  padding: 0 0.25rem; /* 4px */
+}
+
+.px-8{
+  padding: 0 0.5rem; /* 8px */
+}
+
+.px-12{
+  padding: 0 0.75rem; /* 12px */
+}
+
+.px-16{
+  padding: 0 1rem; /* 16px */
+}
+
+.px-20{
+  padding: 0 1.25rem; /* 20px */
+}
+
+.px-24 {
+  padding: 0 1.5rem; /* 24px */
+}
+
+.px-28{
+  padding: 0 1.75rem;/* 28px */
+}
+
+.px-32{
+  padding: 0 2rem; /* 32px */
+}
+
+/* PADDINGS BY Y */
+.py-4{
+  padding: 0.25rem 0; /* 4px */
+}
+
+.py-8{
+  padding: 0.5rem 0; /* 8px */
+}
+
+.py-12{
+  padding: 0.75rem 0; /* 12px */
+}
+
+.py-16{
+  padding: 1rem 0; /* 16px */
+}
+
+.py-20{
+  padding: 1.25rem 0; /* 20px */
+}
+
+.py-24 {
+  padding: 1.5rem 0; /* 24px */
+}
+
+.py-28{
+  padding: 1.75rem 0;/* 28px */
+}
+
+.py-32{
+  padding: 2rem 0; /* 32px */
+}

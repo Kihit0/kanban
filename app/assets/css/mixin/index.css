@@ -1,0 +1,44 @@
+@import url("./p.css"); /* PADDING */
+@import url("./m.css"); /* MARGIN */
+@import url("./w.css"); /* WIDTH */
+
+
+/* DISPLAY */
+.flex {
+  display: flex;
+}
+
+.block{
+  display: block;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+/* FLEX CONTENT */
+.content-center {
+  align-items: center;
+}
+
+.content-start {
+  align-items: start;
+}
+
+.content-end {
+  align-items: end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+
