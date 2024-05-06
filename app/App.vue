@@ -1,9 +1,13 @@
 <script setup>
+import { RouterView } from 'vue-router';
+
 </script>
 
 <template>
   <div class="app w-screen p-8">
-    <div class="app-wrapper rounded-8 w-full"></div>
+    <div class="app-wrapper rounded-8 w-full">
+      <RouterView />
+    </div>
   </div>
 </template>
 
