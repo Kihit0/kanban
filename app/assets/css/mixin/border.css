@@ -1,0 +1,19 @@
+.rounded-4{
+  border-radius: 0.25rem;
+}
+
+.rounded-8{
+  border-radius: 0.5rem;
+}
+
+.rounded-12{
+  border-radius: 0.75rem;
+}
+
+.rounded-16{
+  border-radius: 1rem;
+}
+
+.rounded-full{
+  border-radius: 50%;
+}

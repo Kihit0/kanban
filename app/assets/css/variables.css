@@ -1,10 +1,10 @@
 :root{
-  --bg-color-main: #FFFFFF;
-  --bg-color-second: #F6F7FA;
+  --bg-color-main: #F6F7FA;
+  --bg-color-second: #FFFFFF;
 }
 
 
 :root[data-theme="dark"]{
-  --bg-color-main: #262626;
-  --bg-color-second: #1B1B1B;
+  --bg-color-main: #1B1B1B;
+  --bg-color-second: #262626;
 }
