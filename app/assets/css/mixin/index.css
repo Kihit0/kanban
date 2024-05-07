@@ -42,4 +42,7 @@
   justify-content: end;
 }
 
-
+/* CURSOR */
+.cursor-pointer{
+  cursor: pointer;
+}
