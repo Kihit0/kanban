@@ -1,15 +1,21 @@
-<script setup>
-import { RouterView } from 'vue-router';
-
-</script>
-
 <template>
   <div class="app w-screen p-8">
+    <Icons />
     <div class="app-wrapper rounded-8 w-full">
       <RouterView />
     </div>
   </div>
 </template>
+
+<script>
+import { RouterView } from 'vue-router';
+import Icons from './components/ux/Icons/icons.vue';
+  export default {
+    components: {
+    Icons
+  }
+  }
+</script>
 
 <style scoped>
 .app {

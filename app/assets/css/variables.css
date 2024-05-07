@@ -1,10 +1,18 @@
 :root{
   --bg-color-main: #F6F7FA;
   --bg-color-second: #FFFFFF;
+
+  --text-color-menu: #6F6F86;
+  --text-color-main: #8E8E9F;
+  --text-color-title: #2A2B4E;
 }
 
 
 :root[data-theme="dark"]{
   --bg-color-main: #1B1B1B;
   --bg-color-second: #262626;
+
+  --text-color-menu: #4D4D4D;
+  --text-color-main: #777777;
+  --text-color-title: #D8D8D8;
 }
