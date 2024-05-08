@@ -1,5 +1,5 @@
 <template>
-  <div class="navigation w-full px-12 py-8">
+  <div class="navigation w-full px-12 py-16">
     <div class="navigation-wrapper">
       <div class="navigation-user"></div>
       <div class="navigation-main__menu">
@@ -14,11 +14,11 @@
           </div>
           <div class="navigation-main__menu-items">
             <ExpandTransition>
-              <ul class="navigation-main__menu-items__item" v-show="showMenu">
-                <li class="navigation-main__menu-items__item-li" v-for="(item, index) in getNavigateItems()"
-                  :key="index">
-                  <RouterLink class="flex" :to="{path: item.path}">
-                    <div class="navigation-main__menu-items__item-icon mx-4">
+              <ul class="navigation-ul" v-show="showMenu">
+                <li class="navigation-ul__li" v-for="(item, index) in getNavigateMainItems()" :key="index">
+                  <RouterLink class="navigation-ul__li-link flex content-center p-4 rounded-4" :to="{ path: item.path }"
+                    :class="{ 'active': item.path === getActivePath() }">
+                    <div class="navigation-main__menu-items__item-icon mx-4 flex content-center justify-center">
                       <svg class="menu-icon">
                         <use :xlink:href="`#${String(item.name).toLowerCase()}`" />
                       </svg>
@@ -34,7 +34,31 @@
         </div>
       </div>
       <div class="navigation-pages__user">
+        <div class="flex content-center justify-between cursor-pointer" @click="() => showPages = !showPages">
+          <p>My pages</p>
+          <div class="navigation-icon__expand-more flex content-center justify-center">
+            <svg class="icon-expend" :class="{ 'hidden': !showPages }">
+              <use xlink:href="#expand" />
+            </svg>
+          </div>
+        </div>
+        <div class="navigation-pages__user-items">
+          <ExpandTransition>
+            <ul class="navigation-ul" v-show="showPages">
+              <li class="navigation-ul__li">
+                <RouterLink class="navigation-ul__li-link flex content-center p-4 rounded-4"
+                  to="a"
+                  :class="{ 'active': false }">
 
+                </RouterLink>
+              </li>
+
+              <li class="navigation-ul__li navigation-ul__li-create-pages">
+
+              </li>
+            </ul>
+          </ExpandTransition>
+        </div>
       </div>
     </div>
   </div>
@@ -46,7 +70,7 @@ import ExpandTransition from "../../ui/Transition/ExpandTransition.vue"
 
 export default {
   components: {
-    ExpandTransition
+    ExpandTransition,
   },
   data() {
     return {
@@ -55,7 +79,10 @@ export default {
     }
   },
   methods: {
-    getNavigateItems() {
+    getActivePath() {
+      return this.$route.path;
+    },
+    getNavigateMainItems() {
       const mainPath = this.$router.options.routes.filter(el => el.name === 'Main')[0];
       return mainPath.children ?? [];
     }
@@ -64,54 +91,5 @@ export default {
 </script>
 
 <style scoped>
-.navigation {
-  height: 100%;
-
-  font-size: 0.75rem;
-  color: var(--text-color-menu);
-
-  border: 1px solid red;
-}
-
-.navigation-main__menu-title>div>p {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  letter-spacing: -0.5px;
-}
-
-.navigation-icon__expand-more>.icon-expend {
-  width: 25px;
-  height: 25px;
-  fill: var(--text-color-menu);
-  transition: rotate .2s ease;
-}
-
-.navigation-icon__expand-more>.icon-expend.hidden {
-  rotate: -90deg;
-}
-
-.navigation-main__menu-items__item{
-  margin-top: 8px;
-  margin-left: 8px;
-  list-style: none;
-}
-
-.navigation-main__menu-items__item-li{
-  margin-bottom: 4px;
-
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.navigation-main__menu-items__item-text{
-  margin-left: 6px;
-}
-
-.navigation-main__menu-items__item-icon .menu-icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-}
+@import url("./style.css");
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="app w-screen p-8">
+  <div class="app w-screen">
     <Icons />
     <div class="app-wrapper rounded-8 w-full">
       <RouterView />
