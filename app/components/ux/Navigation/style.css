@@ -44,26 +44,29 @@
 }
 
 .navigation-ul__li-link {
-  transition: color .2s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .navigation-ul__li-link.active{
   background-color: var(--bg-color-main);
   color: var(--text-color-menu-active);
   box-shadow: 0px 1px 4px 0 var(--shadow-color);
-  transition: background-color .2s ease-in;
 }
 
 .navigation-ul__li-link:hover {
   color: var(--text-color-menu-active);
 }
 
-.navigation-main__menu-items__item-text {
+.navigation-items__item-text {
   margin-left: 6px;
 }
 
-.navigation-main__menu-items__item-icon .menu-icon {
+.navigation .menu-icon {
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+
+.navigation-create__text{
+  margin-left: 6px;
 }

@@ -15,6 +15,12 @@
     <symbol id="notification" viewBox="0 -960 960 960">
       <Notification />
     </symbol>
+    <symbol id="add" viewBox="0 -960 960 960">
+      <Add />
+    </symbol>
+    <symbol id="close" viewBox="0 -960 960 960">
+      <Close />
+    </symbol>
   </svg>
 </template>
 
@@ -24,6 +30,8 @@ import Calendar from './icon/Calendar.vue';
 import Search from './icon/Search.vue';
 import Settings from './icon/Settings.vue';
 import Notification from './icon/Notification.vue';
+import Add from "./icon/Add.vue";
+import Close from "./icon/Close.vue";
 
 export default {
   components: {
@@ -31,7 +39,9 @@ export default {
     Calendar,
     Search,
     Settings,
-    Notification
+    Notification,
+    Add,
+    Close
   }
 }
 </script>
