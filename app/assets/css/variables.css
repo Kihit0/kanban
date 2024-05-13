@@ -12,7 +12,7 @@
 
 
 :root[data-theme="dark"]{
-  --bg-color-main: #262626;
+/*   --bg-color-main: #262626;
   --bg-color-second: #1B1B1B;
 
   --text-color-menu: #969696;
@@ -20,5 +20,5 @@
   --text-color-title: #D8D8D8;
   --text-color-menu-active: #c9c9c9;
 
-  --shadow-color: #323232;
+  --shadow-color: #323232; */
 }

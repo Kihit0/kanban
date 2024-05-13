@@ -21,6 +21,9 @@
     <symbol id="close" viewBox="0 -960 960 960">
       <Close />
     </symbol>
+    <symbol id="default" viewBox="0 -960 960 960">
+      <DefaultPages />
+    </symbol>
   </svg>
 </template>
 
@@ -32,6 +35,7 @@ import Settings from './icon/Settings.vue';
 import Notification from './icon/Notification.vue';
 import Add from "./icon/Add.vue";
 import Close from "./icon/Close.vue";
+import DefaultPages from "./icon/DefaultPages.vue";
 
 export default {
   components: {
@@ -41,7 +45,8 @@ export default {
     Settings,
     Notification,
     Add,
-    Close
+    Close,
+    DefaultPages
   }
 }
 </script>

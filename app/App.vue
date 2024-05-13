@@ -10,11 +10,11 @@
 <script>
 import { RouterView } from 'vue-router';
 import Icons from './components/ux/Icons/icons.vue';
-  export default {
-    components: {
+export default {
+  components: {
     Icons
   }
-  }
+}
 </script>
 
 <style scoped>
@@ -24,7 +24,7 @@ import Icons from './components/ux/Icons/icons.vue';
   overflow: hidden;
 }
 
-.app-wrapper{
+.app-wrapper {
   height: 100%;
 }
 </style>

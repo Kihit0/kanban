@@ -1,16 +1,23 @@
 import Main from "../pages/Main.vue";
+import Register from "../pages/Register.vue";
+import Login from "../pages/Login.vue";
+import Calendar from "../pages/Default/Calendar.vue";
+import Notification from "../pages/Default/Notification.vue";
+import Search from "../pages/Default/Search.vue";
+import Settings from "../pages/Default/Settings.vue";
+import UserPage from "../pages/UserPage.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [
   {
     name: "Login",
     path: "/login",
-    component: null,
+    component: Login,
   },
   {
     name: "Register",
     path: "/register",
-    component: null,
+    component: Register,
   },
   {
     name: "Main",
@@ -20,22 +27,27 @@ const routes = [
       {
         name: "Search",
         path: "/search",
-        component: null,
-      },
+        component: Search,
+      },    
       {
         name: "Notification",
         path: "/notification",
-        component: null
+        component: Notification,
       },
       {
         name: "Calendar",
         path: "/calendar",
-        component: null,
+        component: Calendar,
       },
       {
         name: "Settings",
         path: "/settings",
-        component: null
+        component: Settings
+      },
+      {
+        name: "Pages",
+        path: "/user/:userId/pages/:pagesId",
+        component: UserPage
       }
     ],
   },
