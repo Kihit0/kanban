@@ -19,7 +19,6 @@ export default {
 
 <style scoped>
 .app {
-  background-color: var(--bg-color-main);
   height: 100vh;
   overflow: hidden;
 }

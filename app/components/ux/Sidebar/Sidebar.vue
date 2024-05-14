@@ -17,7 +17,7 @@
               <ul class="sidebar-ul" v-show="item.show">
                 <li class="sidebar-ul__li" v-for="(el, idx) in item.items" :key="idx">
                   <RouterLink v-if="el.path !== null" class="sidebar-ul__li-link flex content-center p-4 rounded-4"
-                    :to="{ path: el.path }" :class="{ 'active': item.path === getActivePath() }">
+                    :to="{ path: el.path }" :class="{ 'active': el.path === getActivePath() }">
                     <div class="sidebar-items__item-icon mx-4 flex content-center justify-center">
                       <svg class="menu-icon">
                         <use :xlink:href="`#${String(el.name).toLowerCase()}`" />

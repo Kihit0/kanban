@@ -1,0 +1,17 @@
+.navigation{
+  margin-top: 0.25rem;
+  background-color: var(--bg-color-main);
+  
+  overflow: hidden;
+  
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  border: 1px solid #e2e4eb;
+  border-bottom: none;
+}
+
+/* Custom weight */
+.navigation .w-10{
+  width: 10%;
+}

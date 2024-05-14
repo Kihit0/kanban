@@ -1,1 +1,5 @@
 @import url("./assets/css/index.css");
+
+body{
+  background-color: var(--bg-color-second);
+}
